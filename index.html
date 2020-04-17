@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Box</title>
+
+    <link rel="stylesheet" href="./css/tiny-box.css" />
+  </head>
+  <body>
+    <section class="container-full">
+      <h1 class="text-center">Tiny Box</h1>
+      <div class="container">
+        <section class="card">
+          <h2>Row & Columns</h2>
+          <div class="row">
+            <div class="col demo-col">col</div>
+            <div class="col demo-col">col</div>
+            <div class="col demo-col">col</div>
+          </div>
+          <div class="row">
+            <div class="col-1 demo-col">col-1</div>
+            <div class="col-1 demo-col">col-1</div>
+            <div class="col-1 demo-col">col-1</div>
+            <div class="col-2 demo-col">col-2</div>
+            <div class="col-3 demo-col">col-3</div>
+            <div class="col-4 demo-col">col-4</div>
+          </div>
+          <div class="row">
+            <div class="col-5 demo-col">col-5</div>
+            <div class="col-7 demo-col">col-7</div>
+          </div>
+          <div class="row">
+            <div class="col-6 demo-col">col-6</div>
+            <div class="col-6 demo-col">col-6</div>
+          </div>
+          <div class="row">
+            <div class="col-4 demo-col">col-4</div>
+            <div class="col-8 demo-col">col-8</div>
+          </div>
+          <div class="row">
+            <div class="col-3 demo-col">col-3</div>
+            <div class="col-9 demo-col">col-9</div>
+          </div>
+          <div class="row">
+            <div class="col-2 demo-col">col-2</div>
+            <div class="col-10 demo-col">col-10</div>
+          </div>
+          <div class="row">
+            <div class="col-1 demo-col">col-1</div>
+            <div class="col-11 demo-col">col-11</div>
+          </div>
+          <div class="row">
+            <div class="col-12 demo-col">col-12</div>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Row & Justify Position</h2>
+          <div class="card">
+            <h3>justify-center</h3>
+            <div class="row justify-center">
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>justify-start</h3>
+            <div class="row justify-start">
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>justify-end</h3>
+            <div class="row justify-end">
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>justify-between</h3>
+            <div class="row justify-between">
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>justify-around</h3>
+            <div class="row justify-around">
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>justify-evenly</h3>
+            <div class="row justify-evenly">
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+              <div class="col-2 demo-col">col-2</div>
+            </div>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Media Query</h2>
+          <div class="row">
+            <div class="xl-3 lg-4 md-6 col-12 demo-col">
+              xl-3 lg-4 md-6 col-12
+            </div>
+            <div class="xl-3 lg-4 md-6 col-12 demo-col">
+              xl-3 lg-4 md-6 col-12
+            </div>
+            <div class="xl-3 lg-4 md-6 col-12 demo-col">
+              xl-3 lg-4 md-6 col-12
+            </div>
+            <div class="xl-3 lg-4 md-6 col-12 demo-col">
+              xl-3 lg-4 md-6 col-12
+            </div>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Buttons</h2>
+          <div class="row justify-around">
+            <button class="button">Button</button>
+            <button class="button-outline">Outline Button</button>
+            <button class="button-gray">Gray Button</button>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Anchor</h2>
+          <div class="row align-center justify-around">
+            <a href="#">Plain Link</a>
+            <a class="button" href="#">Link Button</a>
+            <a class="button-outline" href="#">Link Outline Button</a>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Inputs</h2>
+          <div class="row">
+            <div class="col-12 md-6">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Peter" />
+              </div>
+            </div>
+            <div class="col-12 md-6">
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="******" />
+              </div>
+            </div>
+            <div class="col-12 md-6">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="who@example.com" />
+              </div>
+            </div>
+            <div class="col-12 md-6">
+              <div class="input-group">
+                <label for="select-power">Superpower</label>
+                <select name="superpower" id="select-power">
+                  <option value="flight">Flight</option>
+                  <option value="invisibility">Invisibility</option>
+                  <option value="teleportation">Teleportation</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 md-6">
+              <div class="input-group">
+                <label for="description">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="30"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card">
+          <h2>List</h2>
+          <ul>
+            <li>Hello</li>
+            <li>World</li>
+            <li>See you</li>
+            <li>Bye</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Alerts</h2>
+          <p class="message">This is normal alert message.</p>
+          <p class="message-success">This is success alert message.</p>
+          <p class="message-error">This is error alert message.</p>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+/*=============================================
+=            Grid System            =
+=============================================*/
+
+/*----------  Root Container  ----------*/
+.container {
+  max-width: 960px;
+  padding: 0.3rem;
+  margin: 0 auto;
+}
+
+.container-full {
+  max-width: 100%;
+  padding: 0.3rem;
+  margin: 0 auto;
+}
+
+/*----------  Row & Columns  ----------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.demo-col {
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 0.5rem !important;
+}
+
+.col {
+  @include column;
+  flex: 1;
+}
+
+.col-1 {
+  @include column;
+  width: calc(100% / 12);
+}
+
+.col-2 {
+  @include column;
+  width: calc(100% / 6);
+}
+
+.col-3 {
+  @include column;
+  width: 25%;
+}
+
+.col-4 {
+  @include column;
+  width: calc(100% / 3);
+}
+
+.col-5 {
+  @include column;
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  @include column;
+  width: 50%;
+}
+
+.col-7 {
+  @include column;
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  @include column;
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  @include column;
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  @include column;
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  @include column;
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  @include column;
+  width: 100%;
+}
+
+/*----------  md for tablet screen  ----------*/
+@media screen and (min-width: $phone) {
+  .md-1 {
+    @include column;
+    width: calc(100% / 12);
+  }
+
+  .md-2 {
+    @include column;
+    width: calc(100% / 6);
+  }
+
+  .md-3 {
+    @include column;
+    width: 25%;
+  }
+
+  .md-4 {
+    @include column;
+    width: calc(100% / 3);
+  }
+
+  .md-5 {
+    @include column;
+    width: calc((100% / 12) * 5);
+  }
+
+  .md-6 {
+    @include column;
+    width: 50%;
+  }
+
+  .md-7 {
+    @include column;
+    width: calc((100% / 12) * 7);
+  }
+
+  .md-8 {
+    @include column;
+    width: calc((100% / 12) * 8);
+  }
+
+  .md-9 {
+    @include column;
+    width: calc((100% / 12) * 9);
+  }
+
+  .md-10 {
+    @include column;
+    width: calc((100% / 12) * 10);
+  }
+
+  .md-11 {
+    @include column;
+    width: calc((100% / 12) * 11);
+  }
+
+  .md-12 {
+    @include column;
+    width: 100%;
+  }
+}
+
+/*----------  lg for desktop screen  ----------*/
+@media screen and (min-width: $desktop) {
+  .lg-1 {
+    @include column;
+    width: calc(100% / 12);
+  }
+
+  .lg-2 {
+    @include column;
+    width: calc(100% / 6);
+  }
+
+  .lg-3 {
+    @include column;
+    width: 25%;
+  }
+
+  .lg-4 {
+    @include column;
+    width: calc(100% / 3);
+  }
+
+  .lg-5 {
+    @include column;
+    width: calc((100% / 12) * 5);
+  }
+
+  .lg-6 {
+    @include column;
+    width: 50%;
+  }
+
+  .lg-7 {
+    @include column;
+    width: calc((100% / 12) * 7);
+  }
+
+  .lg-8 {
+    @include column;
+    width: calc((100% / 12) * 8);
+  }
+
+  .lg-9 {
+    @include column;
+    width: calc((100% / 12) * 9);
+  }
+
+  .lg-10 {
+    @include column;
+    width: calc((100% / 12) * 10);
+  }
+
+  .lg-11 {
+    @include column;
+    width: calc((100% / 12) * 11);
+  }
+
+  .lg-12 {
+    @include column;
+    width: 100%;
+  }
+}
+
+/*----------  xl for desktop screen  ----------*/
+@media screen and (min-width: $large_desktop) {
+  .xl-1 {
+    @include column;
+    width: calc(100% / 12);
+  }
+
+  .xl-2 {
+    @include column;
+    width: calc(100% / 6);
+  }
+
+  .xl-3 {
+    @include column;
+    width: 25%;
+  }
+
+  .xl-4 {
+    @include column;
+    width: calc(100% / 3);
+  }
+
+  .xl-5 {
+    @include column;
+    width: calc((100% / 12) * 5);
+  }
+
+  .xl-6 {
+    @include column;
+    width: 50%;
+  }
+
+  .xl-7 {
+    @include column;
+    width: calc((100% / 12) * 7);
+  }
+
+  .xl-8 {
+    @include column;
+    width: calc((100% / 12) * 8);
+  }
+
+  .xl-9 {
+    @include column;
+    width: calc((100% / 12) * 9);
+  }
+
+  .xl-10 {
+    @include column;
+    width: calc((100% / 12) * 10);
+  }
+
+  .xl-11 {
+    @include column;
+    width: calc((100% / 12) * 11);
+  }
+
+  .xl-12 {
+    @include column;
+    width: 100%;
+  }
+}
+
+/*----------  Justify Content  ----------*/
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/*----------  Align Items  ----------*/
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-baseline {
+  align-items: baseline;
+}

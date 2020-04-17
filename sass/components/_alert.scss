@@ -1,0 +1,14 @@
+/*=============================================
+=            Alert            =
+=============================================*/
+.message {
+  @include message($color: $primary-color);
+}
+
+.message-error {
+  @include message($color: $error-color);
+}
+
+.message-success {
+  @include message($color: $success-color);
+}

@@ -1,0 +1,42 @@
+/*=============================================
+=            Typography            =
+=============================================*/
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/*----------  Text Align  ----------*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*----------  Color Text  ----------*/
+.text-white {
+  color: white;
+}

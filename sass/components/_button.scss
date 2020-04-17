@@ -1,0 +1,49 @@
+/*=============================================
+=            Button            =
+=============================================*/
+.button {
+  @include button;
+}
+
+.button-outline {
+  @include button($solid: false);
+}
+
+.button-gray {
+  @include button;
+  background-color: #e7e7e7;
+  border: 1px solid #e7e7e7;
+  color: gray;
+  &:hover {
+    color: white;
+    background-color: #bdbdbd;
+    border: 1px solid #bdbdbd;
+  }
+}
+
+a.button {
+  @include button;
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+}
+a.button-outline {
+  @include button($solid: false);
+  text-decoration: none;
+}
+
+//Normal anchor tag
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:visited {
+    color: $primary-color;
+  }
+  &:focus,
+  &:hover,
+  &:active {
+    color: $dark-primary-color;
+  }
+}

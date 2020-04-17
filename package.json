@@ -1,0 +1,13 @@
+{
+  "name": "tiny-box",
+  "version": "1.0.0",
+  "description": "A small css library for responsive web development.",
+  "scripts": {
+    "dev": "sass --watch sass:css",
+    "build": "sass sass/tiny-box.scss:dist/tiny-box.min.css --style compressed --no-source-map && sass sass:dist --no-source-map"
+  },
+  "main": "index.js",
+  "author": "Sunny Xue",
+  "license": "MIT",
+  "private": false
+}
